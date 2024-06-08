@@ -45,6 +45,8 @@ body.container {
     max-width: 1320px;
     min-width: 1200px;
     margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 h2 {
@@ -88,7 +90,7 @@ header figure img {
 }
 
 header figure img {
-    margin: 32rem 0rem 8rem 11rem;
+    margin: 32rem 0rem 8rem 10.5rem;
 }
 
 header {
@@ -102,9 +104,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 6rem;
+    gap: 4rem;
     position: relative;
     height: 832px;
+    margin-bottom: 6rem;
 }
 
 #movies-history-container figure>img.darth {
@@ -118,7 +121,7 @@ header {
     content: "";
     position: absolute;
     left: -2%;
-    top: 0%;
+    top: 2.2rem;
 }
 
 /* -- Article.text-container -- */
@@ -167,7 +170,7 @@ article.linear-card p {
 #sides-container {
     position: relative;
     width: 100%;
-    margin: 5rem 0rem 3rem 0rem;
+    margin: 5rem 0rem 0rem 0rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -180,8 +183,8 @@ article.linear-card p {
     position: absolute;
     width: 17%;
     left: 2%;
-    top: -5%;
-    filter: drop-shadow(0 0 2rem var(--cyan-100));
+    top: 0rem;
+    filter: drop-shadow(0 0 1rem var(--cyan-100));
     z-index: -1;
 }
 
@@ -190,8 +193,8 @@ article.linear-card p {
     position: absolute;
     width: 15%;
     right: 2%;
-    top: -5%;
-    filter: drop-shadow(0 0 2rem var(--cyan-100));
+    top: 0rem;
+    filter: drop-shadow(0 0 1rem var(--cyan-100));
     z-index: -1;
 }
 
@@ -257,7 +260,7 @@ article.linear-card p {
     position: relative;
     background: url(imgs/events-bg-svg.svg) no-repeat right center / 100%;
     margin: 0rem 0rem 6rem 0rem;
-    height: 908px;
+    height: 800px;
 }
 
 /* -- sides-container > title-events-container -- */
@@ -265,6 +268,7 @@ article.linear-card p {
 .title-events-container figure,
 .title-events-container figure img {
     width: 100%;
+    object-fit: fill;
 }
 
 .title-events-container h2 {
@@ -287,11 +291,11 @@ article.linear-card p {
     content: "";
     position: absolute;
     display: grid;
-    grid-template-columns: 352px 352px;
+    grid-template-columns: 332px 332px;
     grid-template-rows: 252px 252px;
     gap: 2rem;
-    right: 8%;
-    top: 20%;
+    right: 6rem;
+    top: 8rem;
 }
 
 .events-grid .event-card {
