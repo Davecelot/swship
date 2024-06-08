@@ -349,3 +349,19 @@ article.linear-card p {
     font-size: 1.25rem;
     width: 130px;
 }
+
+/* Section: spoti-container */
+
+section.spoti-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 6rem;
+    background: url(imgs/spoti-deco.svg) no-repeat right center / 50%;
+    height: 660px;
+}
+
+.spoti-container figure,
+.spoti-container figure img {
+    width: 70%;
+}
