@@ -49,6 +49,8 @@ body.container {
     padding-right: 2rem;
 }
 
+/* -- Titles -- */
+
 h2 {
     font-size: 2rem;
     font-weight: 500;
@@ -113,8 +115,8 @@ header {
 #movies-history-container figure>img.darth {
     content: "";
     position: absolute;
-    right: -5%;
-    bottom: 0%;
+    right: -6rem;
+    bottom: 0rem;
 }
 
 #movies-history-container figure>img.l-vector {
