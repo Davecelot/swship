@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--     <meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+    <title>Star Wars Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Acá inician los links de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!-- Acá terminan los links de Google Fonts -->
+</head>
+
+<body class="container">
+    <!-- Acá comienza el menú de navegación o navbar -->
+    <nav>
+        <h1>
+            <figure><a href="#"><img src="imgs/logo.svg"
+                        alt="Logo de la landing page con las letras 'SW' y una estrella de la muerte."></a></figure>
+        </h1>
+
+        <ul class="navbar">
+            <li><a href="#movies-history-container">Historia</a></li>
+            <li><a href="#sides-container">Escoge un lado</a></li>
+            <li><a href="#events-container">Calendario</a></li>
+            <li><a href="#star-wars-world-container">Experiencia SW</a></li>
+            <li><a href="#newsletter-container">Newsletter</a></li>
+        </ul>
+    </nav>
+    <!-- Acá termina el menú de navegación o navbar -->
+
+    <!-- Acá comienza el header o hero section -->
+    <header id="header">
+        <figure><img src="imgs/Hero-section.svg" alt="Portada de la 'hero section'."></figure>
+    </header>
+    <!-- Acá termina el header o hero section -->
+
+    <!-- Acá comienza la sección de "Historia de las pelis" -->
+    <section id="movies-history-container">
+        <article class="text-container">
+            <h2>Hace mucho tiempo, en una galaxia muy lejana...</h2>
+            <p>Inspirado por Flash Gordon y Kurosawa, George Lucas creó "La guerra de las galaxias". Tras rechazos, en
+                1977, 20th Century Fox la llevó al cine. Un éxito arrollador que dio inicio a una saga galáctica que
+                sigue expandiéndose. La Fuerza nos recuerda que todos podemos ser héroes.</p>
+            <p>El éxito de "Star Wars" impulsó la creación de dos secuelas: "El Imperio Contraataca" (1980) y "El
+                Retorno del Jedi" (1983), completando la trilogía original. Décadas más tarde, Lucas expandió la saga
+                con las precuelas: "La Amenaza Fantasma" (1999), "El Ataque de los Clones" (2002) y "La Venganza de los
+                Sith" (2005).</p>
+            <p>En 2012, Disney adquirió Lucasfilm y dio luz verde a una nueva trilogía: "El Despertar de la Fuerza"
+                (2015), "Los Últimos Jedi" (2017) y "El Ascenso de Skywalker" (2019).</p>
+        </article>
+        <article class="linear-card">
+            <figure><img src="imgs/george-lucas.jpeg" alt="Foto de George Lucas en el set."></figure>
+            <p>George Lucas, creador de Star Wars e Indiana Jones, fundador de Lucasfilm, LucasArts e Industrial Light &
+                Magic.</p>
+        </article>
+        <figure><img src="imgs/darth-vader.png" alt="Ilustración de Darth Vader." class="darth"></figure>
+        <figure><img src="imgs/vector-detail-1.svg" alt="Vector de decoración." class="l-vector"></figure>
+    </section>
+    <!-- Acá termina la sección de "Historia de las pelis" -->
+
+    <!-- Acá comienza la sección de "De qué lado estás" -->
+    <section id="sides-container">
+        <article class="container-text-sides-section">
+            <h2>¿De qué lado estás?</h2>
+            <p>En la galaxia, la lucha entre el bien y el mal se libra entre dos bandos principales: la Primera Orden, heredera del Imperio Galáctico, y la Resistencia, una alianza de rebeldes en busca de restaurar la paz y la libertad.</p>
+        </article>
+
+        <div class="gallery">
+            <article class="pj-card">
+                <figure><img src="imgs/kylo-ren.jpg" alt="Imagen de Kylo Ren." class="pj-img"></figure>
+                <figure><img src="imgs/kylo-name.svg" alt="Nombre de Kylo Ren." class="pj-name"></figure>
+            </article>
+
+            <article class="pj-card">
+                <figure><img src="imgs/luke-skywalker.jpg" alt="Imagen de Luke Skywalker." class="pj-img"></figure>
+                <figure><img src="imgs/Luke-name.svg" alt="Nombre de Luke Skywalker." class="pj-name"></figure>
+            </article>
+
+            <article class="pj-card">
+                <figure><img src="imgs/yoda.jpg" alt="Imagen de Yoda." class="pj-img"></figure>
+                <figure><img src="imgs/Yoda-name.svg" alt="Nombre de Yoda." class="pj-name"></figure>
+            </article>
+
+            <article class="pj-card">
+                <figure><img src="imgs/chewbacca.jpeg" alt="Imagen de Chewbacca." class="pj-img"></figure>
+                <figure><img src="imgs/Chewbacca-name.svg" alt="Nombre de Chewbacca." class="pj-name"></figure>
+            </article>
+
+            <article class="pj-card">
+                <figure><img src="imgs/darth-vader-gallery.jpeg" alt="Imagen de Darth Vader." class="pj-img"></figure>
+                <figure><img src="imgs/Darth-Vader-name.svg" alt="Nombre de Darth Vader." class="pj-name"></figure>
+            </article>
+        </div>
+
+        <figure><img src="imgs/letters-vector.svg" alt="Letras decorativas." class="deco"></figure>
+        <figure><img src="imgs/deco-2.svg" alt="Letras decorativas." class="deco-2"></figure>
+    </section>
+    <!-- Acá termina la sección de "De qué lado estás" -->
+
+    <!-- Acá comienza la sección del calendario de eventos -->
+    <section id="events-container">
+        <div class="title-events-container">
+            <h2>Calendario Intergaláctico</h2>
+            <figure><img src="imgs/highlight-svg.svg" alt="Ilustración decorativa para resaltar el título."></figure>
+        </div>
+        
+        <div class="events-grid">
+            <article class="event-card">
+                <figure><img src="imgs/event-card-header.svg" alt="Header decorativo de la tarjeta."></figure>
+                <div class="event-content">
+                    <p>07.07 - 18 hs</p>
+                    <h3>Celebración 
+                        de las Galaxias</h3>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <figure><img src="imgs/event-card-header.svg" alt="Header decorativo de la tarjeta."></figure>
+                <div class="event-content">
+                    <p>14.07 - 20 hs</p>
+                    <h3>Especial
+                        Star Wars</h3>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <figure><img src="imgs/event-card-header.svg" alt="Header decorativo de la tarjeta."></figure>
+                <div class="event-content">
+                    <p>20.07 - 16 hs</p>
+                    <h3>El Retorno del
+                        Jedi en Concierto</h3>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <figure><img src="imgs/event-card-header.svg" alt="Header decorativo de la tarjeta."></figure>
+                <div class="event-content">
+                    <p>22.07 - 21 hs</p>
+                    <h3>Buffet libre
+                        nocturo en Hoth
+                    </h3>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Acá termina la sección del calendario de eventos -->
+
+    <!-- Acá comienza la sección de "Viví el mundo de Star Wars" -->
+    <section id="star-wars-world-container">
+        Sección de "Viví el mundo de Star Wars".
+    </section>
+    <!-- Acá termina la sección de "Viví el mundo de Star Wars" -->
+
+    <!-- Acá comienza el Newsletter -->
+    <section id="newsletter-container">
+        Sección del Newsletter.
+    </section>
+    <!-- Acá termina el Newsletter -->
+
+    <!-- Acá comienza el Footer -->
+    <footer>
+
+    </footer>
+    <!-- Acá termina el Footer -->
+</body>
+
+</html>
