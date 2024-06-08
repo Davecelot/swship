@@ -84,7 +84,16 @@ nav li>a:hover {
 
 header figure,
 header figure img {
-    width: 100%;
+    width: 60%;
+}
+
+header figure img {
+    margin: 32rem 0rem 8rem 11rem;
+}
+
+header {
+    background: url(imgs/Hero-section.svg) no-repeat right center / 100%;
+    height: 904px;
 }
 
 /* Section: movies-history-container */
@@ -169,7 +178,7 @@ article.linear-card p {
 #sides-container .deco {
     content: "";
     position: absolute;
-    width: 15%;
+    width: 17%;
     left: 2%;
     top: -5%;
     filter: drop-shadow(0 0 2rem var(--cyan-100));
