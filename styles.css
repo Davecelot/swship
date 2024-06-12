@@ -8,12 +8,14 @@
     --white-100: #fbfbfb;
     --cyan-100: #7fbecb;
     --red-100: #ff2606;
+    --yellow-100: #f5ed17;
 
     /* 2 level */
     --bg-color: var(--dark-100);
     --default-color: var(--white-100);
     --primary-action: var(--cyan-100);
     --red-sith: var(--red-100);
+    --star-yellow: var(--yellow-100);
 }
 
 * {
@@ -364,4 +366,84 @@ section.spoti-container {
 .spoti-container figure,
 .spoti-container figure img {
     width: 70%;
+}
+
+/* Section: star-wars-world-container */
+
+#star-wars-world-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0rem 0rem 6rem 0rem;
+    gap: 2rem;
+}
+
+#star-wars-world-container .scroll-gradient {
+    position: relative;
+}
+
+#star-wars-world-container .scroll-gradient::after {
+    content: '';
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(180deg, rgba(7, 6, 20, 1) 40%, rgba(7, 6, 20, 0) 100%);
+}
+
+
+#star-wars-world-container .scroll-wrapper {
+    position: relative;
+    height: 448px;
+    overflow: hidden;
+    width: 100%;
+    perspective: 450px;
+    padding-top: 8rem;
+}
+
+#star-wars-world-container .scroll-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: scroll-text 15s infinite linear;
+}
+
+#star-wars-world-container .scroll-text p {
+    color: var(--star-yellow);
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@keyframes scroll-text {
+    from {
+        top: 0;
+        transform: translateZ(0) rotateX(20deg);
+    }
+
+    to {
+        top: -750px;
+        transform: translateZ(-400px) rotateX(21deg);
+    }
+}
+
+#star-wars-world-container a.btn {
+    display: flex;
+    padding: 1.25rem 2rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100px;
+    background: var(--primary-action);
+    box-shadow: 0 0 1rem 0 var(--primary-action);
+
+    color: var(--dark-100);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
 }
