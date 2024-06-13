@@ -443,7 +443,7 @@ section.spoti-container {
     box-shadow: 0 0 1rem 0 var(--primary-action);
 
     color: var(--dark-100);
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
 }
