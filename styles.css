@@ -439,6 +439,7 @@ section.spoti-container {
     padding: 1.25rem 2rem;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     border-radius: 100px;
     border: none;
@@ -455,6 +456,67 @@ section.spoti-container {
 
 .btn:hover {
     transform: scale(1.12);
+}
+
+/* Section: newsletter-container */
+
+#newsletter-container {
+    position: relative;
+    background: url(imgs/newsletter-bg.svg) no-repeat center / 100%;
+    margin: 6rem 0rem 6rem 0rem;
+    height: 736px;
+}
+
+#newsletter-container .newsletter-content {
+    content: "";
+    position: absolute;
+    right: 2rem;
+    top: 14rem;
+
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.newsletter-content .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.newsletter-content .text-container span {
+    filter: drop-shadow(0 0 2rem var(--primary-action));
+    color: var(--primary-action);
+}
+
+/* -- newsletter-container > suscription-form -- */
+
+.suscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.suscription-form label {
+    font-size: 0.85rem;
+}
+
+.suscription-form input {
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 1rem 2rem 1rem 0.75rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--default-color);
+}
+
+.suscription-form input::placeholder {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.suscription-form input:focus {
+    box-shadow: 0 0 1rem 0 var(--primary-action);
 }
 
 /* Footer */
